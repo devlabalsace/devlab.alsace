@@ -1,0 +1,10 @@
+{
+  "Default": {
+    "State": "Running"
+  },
+  "marina": {
+    "RequestUrlPrefix": "",
+    "State": "Running",
+    "RequestUrlHost": "marina.devlab.alsace"
+  }
+}
