@@ -2,6 +2,10 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/DevLabAlsace",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://127.0.0.1:8080",
       "sslPort": 0
@@ -11,7 +15,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "http://devlab.alsace:8080",
+      "launchUrl": "http://localhost:8080",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
