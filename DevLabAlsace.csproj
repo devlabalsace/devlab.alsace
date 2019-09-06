@@ -138,9 +138,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevLabTheme.OrchardCore" Version="1.0.4-rc" />
-    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-beta3-72166" />
-    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-beta3-72166" />
+    <PackageReference Include="DevLabTheme.OrchardCore" Version="1.0.7-rc" />
+    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-beta3-72285" />
+    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-beta3-72285" />
   </ItemGroup>
   
   <ItemGroup>
