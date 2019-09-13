@@ -19,6 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="DevLabTheme.OrchardCore.1.0.4-rc.nupkg" />
+    <None Remove="DevLabTheme.OrchardCore.1.0.5-rc.nupkg" />
+    <None Remove="DevLabTheme.OrchardCore.1.0.6-rc.nupkg" />
+    <None Remove="DevLabTheme.OrchardCore.1.0.7-rc.nupkg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="NuGet.config" />
     <None Include="wwwroot\is-cache\0\4\5\c\a\e\f\6\3\4\c\a\045caef634ca.meta" />
     <None Include="wwwroot\is-cache\0\6\2\a\0\e\c\2\a\6\a\d\062a0ec2a6ad.meta" />
@@ -138,9 +145,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevLabTheme.OrchardCore" Version="1.0.7-rc" />
-    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-beta3-72285" />
-    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-beta3-72285" />
+    <PackageReference Include="Carousel.OrchardCore" Version="1.0.0-beta3" />
+    <PackageReference Include="DevLabTheme.OrchardCore" Version="1.0.8-rc" />
+    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-beta3-72452" />
+    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-beta3-72452" />
   </ItemGroup>
   
   <ItemGroup>
