@@ -1,20 +1,27 @@
-using Microsoft.AspNetCore;
+using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using OrchardCore.Logging;
 
 namespace DevLabAlsace
 {
     public class Program
     {
-        public static void Main(string[] args)
-        {
-            BuildWebHost(args).Run();
-        }
+        public static Task Main(string[] args)
+            => BuildHost(args).RunAsync();
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseNLogWeb()
-                .UseStartup<Startup>()
+        public static IHost BuildHost(string[] args)
+        {
+            var host = Host.CreateDefaultBuilder(args)
+                .ConfigureLogging(logging => logging.ClearProviders())
+                .ConfigureWebHostDefaults(webBuilder => webBuilder
+                        .UseNLogWeb()
+                        .UseStartup<Startup>())
                 .Build();
+
+            return host;
+        }
     }
 }

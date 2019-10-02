@@ -2,16 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
     <TieredCompilation>true</TieredCompilation>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <StartupObject>DevLabAlsace.Program</StartupObject>
-    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-  </PropertyGroup>
+    <PreserveCompilationReferences>true</PreserveCompilationReferences>
 
-  <PropertyGroup>
-  <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-</PropertyGroup>
+
+    <!-- <StartupObject>DevLabAlsace.Program</StartupObject>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers> -->
+  </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Data\**" />
@@ -22,16 +21,6 @@
 
   <ItemGroup>
     <Content Remove="NuGet.config" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="DevLabTheme.OrchardCore.1.0.12-rc.nupkg" />
-    <None Remove="DevLabTheme.OrchardCore.1.0.4-rc.nupkg" />
-    <None Remove="DevLabTheme.OrchardCore.1.0.5-rc.nupkg" />
-    <None Remove="DevLabTheme.OrchardCore.1.0.6-rc.nupkg" />
-    <None Remove="DevLabTheme.OrchardCore.1.0.7-rc.nupkg" />
-    <None Remove="DevLabTheme.OrchardCore.1.0.8-rc.nupkg" />
-    <None Remove="DevLabTheme.OrchardCore.1.0.9-rc.nupkg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -156,11 +145,8 @@
   <ItemGroup>
     <PackageReference Include="Carousel.OrchardCore" Version="1.0.1-rc" />
     <PackageReference Include="DevLabTheme.OrchardCore" Version="1.0.13-rc" />
-    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc1-10106" />
-  </ItemGroup>
-  
-  <ItemGroup>
     <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-rc1-10106" />
+    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc1-10106" />
   </ItemGroup>
   
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
