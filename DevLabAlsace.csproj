@@ -2,11 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
     <TieredCompilation>true</TieredCompilation>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <StartupObject>DevLabAlsace.Program</StartupObject>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
+
+  <PropertyGroup>
+  <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+</PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Data\**" />
