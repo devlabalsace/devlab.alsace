@@ -146,8 +146,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Carousel.OrchardCore" Version="1.0.0-beta3" />
-    <PackageReference Include="DevLabTheme.OrchardCore" Version="1.0.12-rc" />
+    <PackageReference Include="Carousel.OrchardCore" Version="1.0.1-rc" />
+    <PackageReference Include="DevLabTheme.OrchardCore" Version="1.0.13-rc" />
     <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc1-10093" />
   </ItemGroup>
   
